@@ -1,17 +1,23 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 const MainVisual = () => {
+  const settings = {
+    arrows: true,
+    autoplay: true,
+    pauseOnHover: false,
+  };
+
   return (
     <div className="MainSlide">
-      <Slider arrows={true} autoplay={true} pauseOnHover={false}>
+      <Slider {...settings}>
         <div>
-          <h3>dddd</h3>
+          <h3>ddddd</h3>
         </div>
         <div>
-          <h3>2</h3>
+          <h3>sss</h3>
         </div>
         <div>
-          <h3>3</h3>
+          <h3>ff</h3>
         </div>
       </Slider>
     </div>
