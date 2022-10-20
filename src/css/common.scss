@@ -1,7 +1,10 @@
-$mainColor : #00b843;
-$wColor : #f9f9f9;
-*{outline: 1px solid #f00;}
+$mainColor: #00b843;
+$wColor: #f9f9f9;
+* {
+  outline: 1px solid #f00;
+}
 .container {
-    width: 160rem;
-    margin: 0 auto;
+  max-width: 160rem;
+  width: 100%;
+  margin: 0 auto;
 }

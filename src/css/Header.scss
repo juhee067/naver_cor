@@ -1,21 +1,32 @@
-@use 'common';
+@use "common";
 
-.Header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 7.9rem;
-    .gnb{
-        position: relative;
-        display: flex;
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 7.9rem;
+  .gnb {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 
-        ul{
-            display: flex;
-            gap: 40px;
-            font-weight: 500;
-        }
-}
+    ul {
+      display: flex;
+      gap: 7rem;
+      font-weight: 500;
     }
-
-     
+    .sideMenu {
+      display: flex;
+      gap: 5rem;
+      .language {
+        font-size: 1.3rem;
+        gap: 1.5rem;
+      }
+      .menu {
+        font-size: 3rem;
+      }
+    }
+  }
+}
