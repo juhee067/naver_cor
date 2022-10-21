@@ -1,5 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import "../css/Header.scss";
+
 const MainVisual = () => {
   const settings = {
     arrows: true,
