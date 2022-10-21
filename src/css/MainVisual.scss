@@ -1,0 +1,26 @@
+@use "common";
+
+.MainVisual {
+  position: relative;
+  height: calc(100vh - 18rem);
+  transform: translateY(-8rem);
+  .itm {
+    position: relative;
+    height: calc(100vh - 10rem);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.itm01 {
+      background-image: url(../../public/assets/img/main01.jpg);
+    }
+
+    &.itm02 {
+      background-image: url(../../public/assets/img/main02.jpg);
+    }
+
+    &.itm03 {
+      background-image: url(../../public/assets/img/main03.jpg);
+    }
+  }
+}

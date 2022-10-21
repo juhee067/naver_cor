@@ -1,8 +1,10 @@
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "../css/Header.scss";
+import "../css/MainVisual.scss";
 
 const MainVisual = () => {
+  const MainVisual = useRef(null);
   const settings = {
     arrows: true,
     autoplay: true,
@@ -10,17 +12,9 @@ const MainVisual = () => {
   };
 
   return (
-    <div className="MainSlide">
+    <div className="MainVisual">
       <Slider {...settings}>
-        <div>
-          <h3>ddddd</h3>
-        </div>
-        <div>
-          <h3>sss</h3>
-        </div>
-        <div>
-          <h3>ff</h3>
-        </div>
+        return (<figure className={`itm itm0${idx + 1}`}></figure>)
       </Slider>
     </div>
   );
