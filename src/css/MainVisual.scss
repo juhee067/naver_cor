@@ -2,25 +2,32 @@
 
 .MainVisual {
   position: relative;
-  height: calc(100vh - 18rem);
-  transform: translateY(-8rem);
-  .itm {
+  transform: translateY(7.9rem);
+  .Slider {
     position: relative;
-    height: calc(100vh - 10rem);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &.itm01 {
-      background-image: url(../../public/assets/img/main01.jpg);
-    }
-
-    &.itm02 {
-      background-image: url(../../public/assets/img/main02.jpg);
-    }
-
-    &.itm03 {
-      background-image: url(../../public/assets/img/main03.jpg);
+    strong {
+      position: absolute;
     }
   }
+
+  // .slick-arrow {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+  // button {
+  //   font-size: 0;
+  //   border: 0;
+  //   background: rgba(255, 255, 255, 0.5);
+  //   width: 46px;
+  //   height: 46px;
+  //   border-radius: 50%;
+  // }
+  // .slick-prev {
+  //   background: url(../../public/assets/img/sprite.png);
+  //   background-position: -296px -99px;
+  //   background-size: 474px 1500px;
+  //   opacity: 0.8;
+  //   left: 85px;
+  // }
 }

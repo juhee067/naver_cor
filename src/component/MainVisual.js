@@ -2,11 +2,11 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "../css/MainVisual.scss";
+import { mainContent } from "../data/common";
 
 const MainVisual = () => {
-  const MainVisual = useRef(null);
   const settings = {
-    arrows: true,
+    arrows: false,
     autoplay: true,
     pauseOnHover: false,
   };
@@ -14,7 +14,13 @@ const MainVisual = () => {
   return (
     <div className="MainVisual">
       <Slider {...settings}>
-        return (<figure className={`itm itm0${idx + 1}`}></figure>)
+        {mainContent.map((slide, idx) => (
+          <div className="mainSlider" key={idx}>
+            <img alt="" src={slide.imageSrc} />
+            <strong>{slide.strong}</strong>
+            <p>{slide.content}</p>
+          </div>
+        ))}
       </Slider>
     </div>
   );
