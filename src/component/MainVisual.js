@@ -9,6 +9,7 @@ const MainVisual = () => {
     arrows: true,
     autoplay: true,
     pauseOnHover: false,
+    dots: true,
   };
 
   return (
