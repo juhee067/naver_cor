@@ -19,7 +19,7 @@ const MainVisual = () => {
   };
 
   return (
-    <div className="MainVisual">
+    <section className="MainVisual">
       <Slider {...settings} ref={mainSlide}>
         {mainContent.map((slide, idx) => (
           <div className="mainSlider" key={idx}>
@@ -49,7 +49,7 @@ const MainVisual = () => {
           </div>
         ))}
       </Slider>
-    </div>
+    </section>
   );
 };
 
