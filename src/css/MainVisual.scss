@@ -15,43 +15,46 @@
       bottom: 157px;
       color: #fff;
 
+
       strong {
         display: block;
         font-size: 36px;
-        font-weight: 700px;
+        font-weight: 900px;
         line-height: 1.4;
         margin-bottom: 35px;
       }
 
       p {
         font-size: 15px;
-        font-weight: 300px;
+        font-weight: 500px;
         line-height: 1.6;
       }
     }
-  }
 
 
+    i {
+      padding: 20px;
+      font-size: 15px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 250px;
+      transform: translateY(50%);
 
+      &.left {
+        left: 50px;
+      }
 
-  i {
-    padding: 20px;
-    font-size: 15px;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 221px;
-    transform: translateY(50%);
-
-    &.left {
-      left: 50px;
+      &.right {
+        right: 50px;
+      }
     }
 
-    &.right {
-      right: 50px;
-    }
+
+
   }
+
 
 
 
@@ -61,7 +64,7 @@
     font-size: 0;
     position: absolute;
     left: 160px;
-    bottom: 221px;
+    bottom: 250px;
     width: calc(100% - 320px);
 
 
