@@ -7,8 +7,9 @@
   right: 0;
   background-color: #fff;
   line-height: 7.9rem;
+  z-index: 999;
+
   .gnb {
-    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -17,18 +18,22 @@
       gap: 7rem;
       font-weight: 500;
     }
+
     .sideMenu {
       display: flex;
       gap: 5rem;
+
       .language {
         font-size: 1.3rem;
         gap: 1.5rem;
       }
+
       .menu {
         font-size: 3rem;
       }
     }
   }
 }
+
 // ...spread operator
 // https://dinn.github.io/javascript/js-dotdotdot/
