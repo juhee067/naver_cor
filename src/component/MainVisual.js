@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "../css/MainVisual.scss";
 import { mainContent } from "../data/common";
 
 const MainVisual = () => {
+  state = {
+    currentSlide: 1,
+  };
   const settings = {
     arrows: true,
     autoplay: true,
@@ -24,6 +27,10 @@ const MainVisual = () => {
                 <div className="inner">
                   <strong>{slide.strong}</strong>
                   <p>{slide.content}</p>
+                  <div className="slideNum">
+                    0{idx + 1}
+                    <span> / 0{SLIDE.length}</span>
+                  </div>
                 </div>
               </div>
             </figure>
