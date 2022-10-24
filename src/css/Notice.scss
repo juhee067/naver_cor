@@ -1,0 +1,10 @@
+@use "common";
+.Notice {
+  position: relative;
+  .container {
+    display: flex;
+    figure {
+      width: 25%;
+    }
+  }
+}

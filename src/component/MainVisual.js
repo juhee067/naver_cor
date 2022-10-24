@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "../css/MainVisual.scss";
@@ -7,7 +7,7 @@ import { mainContent } from "../data/common";
 const MainVisual = () => {
   const [IDX, setIDX] = useState();
   useEffect(() => {
-    setIDX(0)
+    setIDX(0);
   }, []);
   const mainSlide = useRef(null);
   const settings = {
@@ -15,8 +15,7 @@ const MainVisual = () => {
     autoplay: true,
     pauseOnHover: false,
     dots: true,
-    afterChange: index => setIDX(index),
-
+    afterChange: (index) => setIDX(index),
   };
 
   return (
@@ -31,24 +30,27 @@ const MainVisual = () => {
                   <strong>{slide.strong}</strong>
                   <p>{slide.content}</p>
                   <div className="slideNum">
-                    0{IDX + 1}<span> / 0{mainContent.length}</span>
+                    0{IDX + 1}
+                    <span> / 0{mainContent.length}</span>
                   </div>
                 </div>
-
               </div>
               <div className="allows">
-                <i onClick={() => mainSlide.current.slickPrev()} className='xi-arrow-left left'></i>
-                <i onClick={() => mainSlide.current.slickNext()} className='xi-arrow-right right'></i>
+                <i
+                  onClick={() => mainSlide.current.slickPrev()}
+                  className="xi-arrow-left left"
+                ></i>
+                <i
+                  onClick={() => mainSlide.current.slickNext()}
+                  className="xi-arrow-right right"
+                ></i>
               </div>
-
             </figure>
-
           </div>
         ))}
       </Slider>
     </div>
   );
-
 };
 
 export default MainVisual;

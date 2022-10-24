@@ -15,13 +15,12 @@
       bottom: 157px;
       color: #fff;
 
-
       strong {
         display: block;
         font-size: 36px;
         font-weight: 900px;
         line-height: 1.4;
-        margin-bottom: 35px;
+        margin-bottom: 50px;
       }
 
       p {
@@ -29,8 +28,14 @@
         font-weight: 500px;
         line-height: 1.6;
       }
+      .slideNum {
+        margin-top: 20px;
+        span {
+          font-size: 13px;
+          color: rgb(158, 158, 158);
+        }
+      }
     }
-
 
     i {
       padding: 20px;
@@ -50,15 +55,7 @@
         right: 50px;
       }
     }
-
-
-
   }
-
-
-
-
-
 
   .slick-dots {
     font-size: 0;
@@ -66,7 +63,6 @@
     left: 160px;
     bottom: 250px;
     width: calc(100% - 320px);
-
 
     li {
       display: inline-block;
@@ -85,8 +81,6 @@
       outline: none;
     }
 
-
-
     // li {
     //   display: inline-block;
     //   margin: 0 0.5rem;
@@ -99,7 +93,6 @@
     //     border: none;
     //     outline: none;
     //   }
-
 
     // }
   }
