@@ -7,10 +7,12 @@ import { mainContent } from "../data/common";
 const MainVisual = () => {
 
   const settings = {
-    arrows: true,
+    arrows: false,
     autoplay: true,
     pauseOnHover: false,
     dots: true,
+
+
   };
 
   return (
@@ -27,12 +29,20 @@ const MainVisual = () => {
                 </div>
 
               </div>
+              <div className="allows">
+                <i className="xi-angle-left left"></i>
+                <i className="xi-angle-right right"></i>
+
+
+              </div>
             </figure>
+
           </div>
         ))}
       </Slider>
     </div>
   );
+
 };
 
 export default MainVisual;
