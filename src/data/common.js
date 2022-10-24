@@ -21,5 +21,35 @@ const mainContent = [
     link: "/",
   },
 ];
+const notice = [
+  {
+    id: 1,
+    title: "NEWS",
 
-export { mainContent };
+    btn: "바로가기",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "CAREER",
+
+    btn: "네이버에서 일한다는 것",
+    link: "/",
+  },
+  {
+    id: 3,
+    title: "STOCK",
+
+    btn: "주가정보",
+    link: "/",
+  },
+  {
+    id: 4,
+    title: "결산 공고",
+
+    btn: "결산공고 보러가기",
+    link: "/",
+  },
+];
+
+export { mainContent, notice };
