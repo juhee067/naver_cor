@@ -8,6 +8,7 @@ const Notice = () => {
           return (
             <figure key={content.id}>
               <div className="tit">{content.title}</div>
+
               <div className="dec">{content.btn}</div>
             </figure>
           );
