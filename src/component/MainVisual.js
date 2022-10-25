@@ -24,7 +24,7 @@ const MainVisual = () => {
         {mainContent.map((slide, idx) => (
           <div className="mainSlider" key={idx}>
             <figure className={`itm itm0${idx + 1}`} key={idx}>
-              <img src={slide.imageSrc} />
+              <img src={slide.imageSrc} alt="/" />
               <div className="container">
                 <div className="inner">
                   <strong>{slide.strong}</strong>

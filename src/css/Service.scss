@@ -1,6 +1,55 @@
 @use "common";
-.Sercive {
+
+.Service {
   position: relative;
-  .container {
+
+  .contentSV {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    ul {
+      position: relative;
+
+      li {
+        display: inline-block;
+        width: 100%;
+
+
+      }
+
+      .title {
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        color: #fff;
+
+        li:nth-child(1) {
+          display: inline;
+          padding: 4px 7px;
+          font-size: 15px;
+          border-radius: 50%;
+          background-color: common.$mainColor;
+
+          i {
+            rotate: 45deg;
+            margin-bottom: 20px;
+          }
+        }
+
+        li:nth-child(2) {
+          font-weight: 700;
+          font-size: 22px;
+          padding-bottom: 10px;
+        }
+
+        li:nth-child(3) {
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+    }
+
+
   }
 }

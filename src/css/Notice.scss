@@ -1,9 +1,12 @@
 @use "common";
+
 .Notice {
   position: relative;
   padding: 100px 0;
+
   .container {
     display: flex;
+
     figure {
       width: 25%;
     }
