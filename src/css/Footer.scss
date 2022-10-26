@@ -3,4 +3,14 @@
 .Footer {
   padding: 80px 0;
   background-color: #f8f9fa;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      ul {
+        display: flex;
+      }
+    }
+  }
 }
