@@ -1,4 +1,4 @@
-import "../css/Platform.scss";
+import "../css/Main.scss";
 import { platform } from "../data/common";
 const Platform = () => {
   return (
@@ -32,7 +32,3 @@ const Platform = () => {
 };
 
 export default Platform;
-// &.item1 {
-//         background: nth($bgcolor, 1);
-//         color: #444;
-//       }

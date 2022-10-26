@@ -1,4 +1,4 @@
-import "../css/Service.scss";
+import "../css/Main.scss";
 import { service } from "../data/common";
 
 const Service = () => {
