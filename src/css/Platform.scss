@@ -2,4 +2,72 @@
 
 .Platform {
   padding: 100px 0;
+  .title {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+      color: #212121;
+    }
+    p {
+      font-size: 18px;
+
+      margin-bottom: 134px;
+      color: #333;
+      line-height: 1.6;
+      span {
+        display: block;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    a {
+      position: relative;
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      color: common.$mainColor;
+      margin-bottom: 10px;
+      padding: 135px 10px 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    a::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100px;
+      background-image: url(../../public/assets/img/sprite.png);
+    }
+    a.pic01::before {
+      width: 87px;
+      background-position: 0 -957px;
+    }
+    a.pic02::before {
+      width: 101px;
+      background-position: -92px -957px;
+    }
+    a.pic03::before {
+      width: 110px;
+      height: 95px;
+      background-position: -199px -957px;
+    }
+    a.pic04::before {
+      width: 93px;
+      background-position: -316px -957px;
+    }
+    p {
+      font-size: 15px;
+      color: #878890;
+      line-height: 1.6;
+    }
+  }
 }
