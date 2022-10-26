@@ -32,3 +32,7 @@ const Platform = () => {
 };
 
 export default Platform;
+// &.item1 {
+//         background: nth($bgcolor, 1);
+//         color: #444;
+//       }
