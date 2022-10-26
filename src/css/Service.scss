@@ -10,31 +10,29 @@
 
     figure {
       position: relative;
-      overflow: hidden;
 
       &:hover .title {
-        opacity: 100;
-
+        bottom: 50px;
+        transition: 0.5s;
+      }
+      &:hover img {
+        -webkit-filter: brightness(50%);
+        filter: brightness(50%);
       }
 
-
       .title {
-        opacity: 0;
         position: absolute;
         left: 50px;
-        bottom: 50px;
+        bottom: -45px;
         color: #fff;
 
         i {
-
           padding: 8px;
           font-size: 15px;
           border-radius: 50%;
           background-color: common.$mainColor;
           rotate: 45deg;
           margin-bottom: 20px;
-
-
         }
 
         h2 {
@@ -48,10 +46,6 @@
           font-size: 15px;
         }
       }
-
-
-
-
     }
   }
 }
