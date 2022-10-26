@@ -4,3 +4,5 @@ const company = {
   copy: " Copyright&copy;NAVER Corp. All Rights Reserved.",
   sc: "자회사 바로가기",
 };
+
+export default company;

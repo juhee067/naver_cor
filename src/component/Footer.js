@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div className="Footer">
       <div className="container">
+        <div className="logo">{company.logo}</div>
         <ul className="open">
-          <div className="logo">{company.logo}</div>
           {company.naver.map((content, idx) => (
             <li key={idx}>{content}</li>
           ))}
