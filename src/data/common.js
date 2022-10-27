@@ -49,7 +49,7 @@ const notice = [
   },
   {
     id: 4,
-    title: "결산 공고",
+    title: "결산공고",
 
     btn: "결산공고 보러가기",
     link: "/",

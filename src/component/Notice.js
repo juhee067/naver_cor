@@ -3,24 +3,24 @@ import { notice } from "../data/common";
 import News from "./News";
 import Career from "./Career";
 import Stock from "./Stock";
-import State from "./State";
+import Settle from "./Settle";
 
 const Notice = () => {
   return (
     <section className="Notice">
       <div className="container">
         {notice.map((content) => {
-          const it_Tit = content.title;
+          const it_Tit = content.id;
           return (
             <figure key={content.id}>
               <div className="tit">{content.title}</div>
               <div className="content">
                 {
                   {
-                    NEWS: <News />,
-                    CAREER: <Career />,
-                    STOCK: <Stock />,
-                    STATE: <State />,
+                    1: <News />,
+                    2: <Career />,
+                    3: <Stock />,
+                    4: <Settle />,
                   }[it_Tit]
                 }
               </div>
