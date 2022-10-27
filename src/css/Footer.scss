@@ -5,11 +5,50 @@
   background-color: #f8f9fa;
   .container {
     display: flex;
+
     justify-content: space-between;
     .left {
       display: flex;
-      ul {
-        display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      li {
+        position: relative;
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 14px;
+        color: #878890;
+      }
+      li ~ li::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 3px;
+        width: 1px;
+        height: 12px;
+        background-color: #dfe0e1;
+      }
+    }
+    .copy {
+      color: #7a7b85;
+      font-weight: 500;
+      letter-spacing: 0.0125em;
+    }
+    .Shortcut {
+      position: relative;
+    }
+    .Shortcut::before {
+      content: "자회사 바로가기";
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    button {
+      border: none;
+      padding: 0 4px;
+      background-color: #d4d4d4;
+      border-radius: 50%;
+      margin-left: 15px;
+      i {
+        color: #f8f9fa;
       }
     }
   }

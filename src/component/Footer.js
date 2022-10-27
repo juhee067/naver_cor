@@ -16,9 +16,12 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
         <div className="copy">{company.copy}</div>
-        <div className="Shortcut">{company.sc}</div>
+        <div className="Shortcut">
+          <button>
+            <i className="xi-plus-min"></i>
+          </button>
+        </div>
       </div>
     </div>
   );
