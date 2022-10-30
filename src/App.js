@@ -26,7 +26,6 @@ function App() {
         <Route path="/invest" element={<Invest />} />
         <Route path="/story" element={<Story />} />
         <Route path="/employ" element={<Employ />} />
-        {/* <Route path='/detail/:id' element={<Detail user={user} />} /> */}
       </Routes>
       <MainVisual />
       <Notice />
