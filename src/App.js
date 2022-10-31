@@ -18,8 +18,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        {" "}
-        <Route path="/intro" element={<Intro />} />
+        <Route path="/" element={<MainVisual />} />
+        <Route path="/pages/Intro" element={<Intro />} />
         <Route path="/Servicegnb" element={<Servicegnb />} />
         <Route path="/value" element={<Value />} />
         <Route path="/promote" element={<Promote />} />
@@ -27,11 +27,12 @@ function App() {
         <Route path="/story" element={<Story />} />
         <Route path="/employ" element={<Employ />} />
       </Routes>
-      <MainVisual />
+
       <Notice />
       <Service />
       <Platform />
       <Footer />
+
     </>
   );
 }
